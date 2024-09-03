@@ -42,6 +42,11 @@ public class ScreenManager {
                 currentScreen = new ChangeColorScreen();
                 break;
             }
+            case HELP_SCREEN -> {
+                currentScreen = new HelpScreen();
+                break;
+            }
+
         }
     }
 }

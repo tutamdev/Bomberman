@@ -38,7 +38,7 @@ public class HomeMenu {
             }
             if (cursor.getNumOfSelect() == 2) {
                 GameStatus.init();
-                ScreenManager.switchScreen(ScreenType.PVP_SCREEN);
+                ScreenManager.switchScreen(ScreenType.HELP_SCREEN);
             }
             if (cursor.getNumOfSelect() == 3) {
                 ScreenManager.switchScreen(ScreenType.OPTION_SCREEN);
@@ -56,7 +56,7 @@ public class HomeMenu {
         Sandbox.getGc().drawImage(logo, 170, 75);
 
         Sandbox.getGc().drawImage(ImageManager.getImage("asset/menu/Normal_Game.png"), cursor.getX() + 50, cursor.getY() );
-        Sandbox.getGc().drawImage(ImageManager.getImage("asset/menu/PVP_Game.png"), cursor.getX() + 50, cursor.getY()  + cursor.getSpaceBetween() + GlobalConstant.TILE_SIZE);
+        Sandbox.getGc().drawImage(ImageManager.getImage("asset/menu/Help.png"), cursor.getX() + 50, cursor.getY()  + cursor.getSpaceBetween() + GlobalConstant.TILE_SIZE);
         Sandbox.getGc().drawImage(ImageManager.getImage("asset/menu/Option.png"), cursor.getX() + 50, cursor.getY() + 2*(cursor.getSpaceBetween() + GlobalConstant.TILE_SIZE));
 
         cursor.render();
