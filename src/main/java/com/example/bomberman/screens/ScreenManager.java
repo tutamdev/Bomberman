@@ -46,6 +46,14 @@ public class ScreenManager {
                 currentScreen = new HelpScreen();
                 break;
             }
+            case CONTROL_SCREEN -> {
+                currentScreen = new ControlScreen();
+                break;
+            }
+            case RULES_SCREEN -> {
+                currentScreen = new RulesScreen();
+                break;
+            }
 
         }
     }

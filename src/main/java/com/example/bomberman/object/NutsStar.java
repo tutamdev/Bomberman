@@ -3,7 +3,6 @@ package com.example.bomberman.object;
 import com.example.bomberman.constants.GlobalConstant;
 import com.example.bomberman.general.AnimationManager;
 import com.example.bomberman.general.ImageManager;
-
 import javafx.util.Duration;
 import javafx.util.Pair;
 
